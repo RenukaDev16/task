@@ -1,0 +1,12 @@
+table, td,th {
+    border: 1px solid pink;
+  }
+table {
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  td {
+    height: 50px;
+    vertical-align: bottom;
+  }
