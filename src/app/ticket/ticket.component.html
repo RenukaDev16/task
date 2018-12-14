@@ -1,3 +1,4 @@
+<app-dashboard></app-dashboard>
 <table class="table table-responsive table-striped">
     <tr>
        <th>name</th>
@@ -6,9 +7,9 @@
     
     <tr *ngFor="let row of obj">
       
-      <td>{{row.enam}}</td>
-      <td>{{row.ecom}}</td>
+      <td>{{row.name}}</td>
+      <td>{{row.comment}}</td>
     </tr>
   </table>
   <div>
-<input type="button" value="create" (click)=goo()>
+<input type="button" value="create" (click)=createTicket()>

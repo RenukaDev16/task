@@ -12,9 +12,12 @@ export class LoginFormComponent implements OnInit {
 
   ngOnInit() {
   }
-  Loginuser(uname: string, pwd: string) {
+
+  loginUser(uname: string, pwd: string) {
    if ( uname === 'renuka' && pwd === 'renuka') {
- this.router.navigate(['/dashboard']);
+    localStorage.setItem('key', JSON.stringify([])); // initallykey is empty atfirst login
+    // which redirectagainto login bylogicof appdashboad so set sumvalue
+        this.router.navigate(['/home']);
   }
 }
 

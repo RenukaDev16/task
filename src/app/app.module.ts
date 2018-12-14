@@ -10,8 +10,13 @@ import { TicketComponent } from './ticket/ticket.component';
 import { EntryticketComponent } from './entryticket/entryticket.component';
 const appRoutes: Routes = [
   {
-path : 'login',
-component: LoginFormComponent
+    path : '',
+    redirectTo : 'login',
+    pathMatch: 'full'
+    },
+  {
+  path : 'login',
+  component: LoginFormComponent
   },
   {
     path : 'dashboard',
@@ -28,7 +33,7 @@ component: LoginFormComponent
   {
     path : 'entryticket' ,
     component : EntryticketComponent
-  }
+  },
 ];
 @NgModule({
   declarations: [
